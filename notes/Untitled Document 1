@@ -1,0 +1,43 @@
+sudo nano /etc/apache2/sites-available/jobtask.conf
+
+
+sudo a2ensite jobtask.conf
+
+
+/var/log/apache2/error.log.
+
+
+ $('form[id="signinrec"]').validate({
+			rules:{
+				cname:'required',
+				cmail:{
+					required:true,
+					email:true,
+				},
+				cpass:{
+					required:true,
+					minlength:8,
+				},
+				cnumb:{
+					required:true,
+					minlength:10,
+				}
+			},
+			messages:{
+				cname:'Please fill the Company name',
+				cmail:'Please fill the Company Mail',
+				cpass:{
+					minlength:'Your password must contain atleast 8 digits'
+				},
+				cnumb:{
+					minlength:'Contact number must contain 10 digits'
+				}
+			},
+			submitHandler: function(form) {
+				form.submit();
+			}
+			});
+
+
+			});
+		

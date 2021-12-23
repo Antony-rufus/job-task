@@ -1,0 +1,5 @@
+public function accountcheck($umail)
+		{
+			$result1=mysqli_query($this->dbh,"select compmail from companysignin where compmail='$umail'");
+			return($reault1);
+		}

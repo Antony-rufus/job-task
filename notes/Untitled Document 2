@@ -1,0 +1,61 @@
+sudo nano /etc/apache2/sites-available/task.conf
+sudo a2dissite your_domain.conf
+sudo nano /etc/apache2/sites-available/your_domain.conf
+
+
+
+
+antony@antony-B250M-D2V:~$ sudo nano /etc/hosts
+[sudo] password for antony: 
+antony@antony-B250M-D2V:~$ 
+
+
+
+127.0.0.1      jobtask-local.com
+127.0.0.1       localhost
+127.0.1.1       antony-B250M-D2V
+
+# The following lines are desirable for IPv6 capable hosts
+::1     ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+
+	/*              var name=$('#addcname').val();
+					var jobtype=$('#addjobtype').val();
+					var qua=$('#addqua').val();
+					var mail=$('#addcmail').val();
+					var number=$('#addcnumb').val();
+					$('.error').remove();
+					if(name.length<1)
+					{
+						$('#addcname').after('<span class="error">Please fill the Company name</span>');
+					}
+					if(jobtype.length<1)
+						{
+							$('#addjobtype').after('<span class="error">Please fill the Job type</span>');
+						}
+					if(qua.length<1)
+					{
+						$('#addqua').after('<span class="error">Please fill the Qualification</span>');
+					}
+					if(mail.length<1)
+					{
+						$('#addcmail').after('<span class="error">Please fill the Company mail</span>');
+					}
+					else
+					{
+						var mailcon= /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+						var validmail=mailcon.test(mail);
+						if(!validmail)
+						{
+							$('#addcmail').after('<span class="error">Please enter a Valid Mail Address</span>');
+						}
+
+					}
+					if(number.length<9)
+					{
+						$('#addcnumb').after('<span class="error">Your Contact number must contain atleast 10 digits</span>');
+					}
+						*/

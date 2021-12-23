@@ -1,0 +1,29 @@
+antony@antony-B250M-D2V:/etc$ cd apache2/
+antony@antony-B250M-D2V:/etc/apache2$ cd sites-available/
+antony@antony-B250M-D2V:/etc/apache2/sites-available$ ls
+000-default.conf  default-ssl.conf  firstact.conf  first.conf  job.conf  project.conf  your_domain.conf
+antony@antony-B250M-D2V:/etc/apache2/sites-available$ cat job.conf
+
+
+antony@antony-B250M-D2V:/etc/apache2/sites-available$ sudo systemctl restart apache2
+
+antony@antony-B250M-D2V:/etc/apache2/sites-available$ sudo nano job.conf
+
+
+
+<VirtualHost *:80>
+    ServerAdmin webmaster@localhost
+    ServerName job-local.com
+    DocumentRoot /home/antony/Documents/projects/job
+    <Directory /home/antony/Documents/projects/job/>
+       Options Indexes FollowSymLinks
+        AllowOverride All
+        Require all granted
+        allow from all
+    </Directory>
+    ErrorLog ${APACHE_LOG_DIR}/error.log
+    CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
+
+
+
