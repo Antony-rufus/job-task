@@ -36,7 +36,7 @@ if(!isset($_SESSION['SMAIL']) && empty($_SESSION['SMAIL']))
     
     $data=$viewjob->availablejob();
     ?>
-    <div class="container">
+    <div class="container-fluid">
     <div class="table-responsive">
     <table id="view" class="table table-bordered">
     <thead>
