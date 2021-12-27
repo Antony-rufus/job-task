@@ -12,7 +12,7 @@ $sql=$seeklog->seekerlogin($seekername,$seekermail);
 
 if($sql==1)
 {
-    $_SESSION['seeker']=$seekername;
+    
     echo json_encode(array("statusCode"=>200));
 }
 else if($sql==2)
