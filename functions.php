@@ -79,6 +79,8 @@ define ('DB_Name','db_jobtask');
 			$result4=mysqli_query($this->dbh,"insert into jobseeker (`seekername`,`seekermail`) values('$seekername','$seekermail')");
 			if(mysqli_affected_rows($this->dbh)>0)
 			{
+				session_start();
+				$_SESSION['SMAIL']=$seekermail;
 				$i=$i+2;
 			return($i);
 			}
