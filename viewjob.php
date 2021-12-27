@@ -15,10 +15,10 @@ if(!isset($_SESSION['SMAIL']) && empty($_SESSION['SMAIL']))
 		<script src="jquery/jquery-3.6.0.min.js" type="text/javascript"></script>
         
         <script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
- <script type="text/javascript" charset="utf-8" src="DataTables/media/js/jquery.dataTables.js"></script>
+
         <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="DataTables/media/css/jquery.dataTables.css">
-
+        <script type="text/javascript" charset="utf-8" src="DataTables/media/js/jquery.dataTables.js"></script>
 	
 
     </head>
