@@ -36,7 +36,7 @@ if(!isset($_SESSION['MAIL']) && empty($_SESSION['MAIL']))
     $cid=$_SESSION['cid'];
     $data=$viewjobtoedit->companyaddedjob($cid);
     ?>
-    <div class="container">
+    <div class="container-fluid">
     <div class="table-responsive">
     <table id="view" class="table table-bordered">
     <thead>
